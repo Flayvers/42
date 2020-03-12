@@ -1,0 +1,5 @@
+pip freeze | cut -d= f1
+pip list
+pip show numpy -v
+pip search tessreact
+pip freeze > requirements.txt
