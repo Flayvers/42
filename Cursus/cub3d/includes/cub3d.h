@@ -29,7 +29,7 @@
 # define NEXT 2
 
 # include "../ft_printf/includes/ft_printf.h"
-# include "utils.h"
+//# include "utils.h"
 # include <mlx.h>
 # include <math.h>
 # include <time.h>
