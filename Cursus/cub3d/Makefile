@@ -16,57 +16,27 @@ MLX = -lmlx -lm -framework OpenGL -framework AppKit
 NAME = cub3D
 
 SRCS = 	cub3d.c \
-		utils/putstr_info.c \
-		utils/get_line.c \
-		utils/utils.c \
-		utils/bitmap.c \
-		sources/init_game.c \
-		sources/description/window_size_from_string.c \
-		sources/description/path_from_string.c \
-		sources/description/color_from_string.c \
-		sources/description/treat_desc.c \
-		sources/description/treat_map.c \
-		sources/managers/key_manager.c \
-		sources/managers/loop_manager.c \
-		sources/managers/window_manager.c \
-		sources/engine/player.c \
-		sources/engine/image.c \
-		sources/engine/raycasting.c \
-		sources/engine/raycasting_2.c \
-		sources/engine/textures.c \
-		sources/engine/camera.c \
-		sources/engine/draw_sprite.c \
-		sources/engine/sprite.c
-
-SRCS_BONUS = 	bonus/engine/bonus_camera.c \
-				bonus/engine/bonus_health.c \
-				bonus/managers/bonus_key_manager.c \
-				bonus/engine/bonus_sound.c \
-				bonus/init_bonus.c
 
 OBJSRCS = $(SRCS:.c=.o) 
-OBJSRCSBONUS = $(SRCS_BONUS:.c=.o)
 
-$(NAME) : $(OBJSRCS) $(OBJSRCSBONUS)
+$(NAME) : $(OBJSRCS)
 	@echo "\033[33m[Remove last version...]"
 	@rm -rf Cub3D
-	@echo "\033[33m[Libft compilation...]"
-	@$(MAKE) bonus -C ./libft
+	@echo "\033[33m[Libft & ft_printf compilation...]"
+	@$(MAKE) bonus -C ./ft_printf
 	@echo "\033[33m[Cub3D compilation...]"
-	@gcc $(OBJSRCSBONUS) $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) ./libft/libft.a -o $(NAME)
+	@gcc $(OBJSRCSBONUS) $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) ./ft_printf/ft_printf.a -o $(NAME)
 	@echo "\033[33m[Done !]"
 
 all : $(NAME)
 
 clean :
-	rm -rf $(OBJSRCS) $(OBJSRCSBONUS)
-	$(MAKE) clean -C ./libft
+	rm -rf $(OBJSRCS)
+	$(MAKE) clean -C ./ft_printf
 
 fclean : clean
-	$(MAKE) fclean -C ./libft
+	$(MAKE) fclean -C ./ft_printf
 	rm -rf $(NAME)
 	rm -rf cub3d.bmp
 
 re : fclean all
-
-bonus : $(NAME)
