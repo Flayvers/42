@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cub3d.h                                    :+:      :+:    :+:   */
+/*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrhrara <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rchallie <rchallie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/24 13:58:02 by rrhrara           #+#    #+#             */
-/*   Updated: 2020/02/24 14:41:04 by rrhrara          ###   ########.fr       */
+/*   Created: 2019/11/22 11:52:11 by rchallie          #+#    #+#             */
+/*   Updated: 2020/01/16 17:11:42 by rchallie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,11 @@
 # define CAM_RIGHT 124
 # define CAMUP 126
 # define CAMDOWN 125
+
+# define ERROR_INF -1
+# define ERROR 0
+# define SUCCES 1
+# define NEXT 2
 
 # include "../ft_printf/includes/ft_printf.h"
 # include "utils.h"
