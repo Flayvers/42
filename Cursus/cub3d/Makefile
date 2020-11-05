@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-MLX = -lmlx -lm -framework OpenGL -framework AppKit
-#MLX = -I /usr/include -g -L /usr/lib -lX11 -lmlx -lXext -lm -fsanitize=address
+#MLX = -lmlx -lm -framework OpenGL -framework AppKit
+MLX = -I /usr/include -g -L /usr/lib -lX11 -lmlx -lXext -lm -fsanitize=address
 
 NAME = cub3D
 
