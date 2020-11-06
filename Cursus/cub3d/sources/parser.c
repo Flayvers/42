@@ -32,12 +32,12 @@ int	check_line_R(char *line, t_window *win)
 
 	split = ft_split(line, ' ');
 
-	if (split[0][0] == 'R' && split[3] == '\n')
+	if (split[0][0] == 'R' && split[3][0] == '\n')
 	{
 		if (ft_isnum(split[1]))
 			win->heigh = ft_atoi(split[1]);
 		if (ft_isnum(split[2]))
-			win->width = ft_atoi(split[2])
+			win->width = ft_atoi(split[2]);
 	}
 	return (1);
 }
