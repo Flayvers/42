@@ -16,7 +16,6 @@
 # define SUCCES 1
 # define NEXT 2
 
-# include "../libft/libft.h"
 # include "utils.h"
 # include <mlx.h>
 # include <math.h>
