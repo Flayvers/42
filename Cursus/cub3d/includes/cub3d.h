@@ -38,7 +38,7 @@ typedef	struct			s_window
 	char				*set_name;
 }						t_window;
 
-int		parser(t_window *win)
-int		check_line_R(char *line, t_window *win)
+int		parser(t_window *win);
+int		check_line_R(char *line, t_window *win);
 
 #endif

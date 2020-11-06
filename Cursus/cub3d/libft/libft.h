@@ -23,6 +23,8 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					ft_isnum(char *str);
+char				*ft_strndup(char *s1, int n);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *str, int fd);

@@ -19,7 +19,7 @@ int				main(int ac, char **av)
 
     mlx = mlx_init();
     parser(win);
-    win->mlx_win = mlx_new_window(mlx, win-heigh, width, "Cub3D");
+    win->mlx_win = mlx_new_window(mlx, win->heigh, win->width, "Cub3D");
     mlx_loop(mlx);
     return(0);
 } 
