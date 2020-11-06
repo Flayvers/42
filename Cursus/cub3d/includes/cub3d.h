@@ -21,7 +21,7 @@
 # include <mlx.h>
 # include <math.h>
 # include <time.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 
 typedef	struct			s_window
 {

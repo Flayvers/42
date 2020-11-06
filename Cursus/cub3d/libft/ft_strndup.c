@@ -1,3 +1,5 @@
+#include "../includes/cub3d.h"
+
 char	*ft_strndup(char *s1, int n)
 {
 	int		i;
