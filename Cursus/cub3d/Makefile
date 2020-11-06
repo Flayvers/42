@@ -16,6 +16,8 @@ MLX = -lmlx -lm -framework OpenGL -framework AppKit
 NAME = cub3D
 
 SRCS = 	cub3d.c \
+		./sources/parser.c \
+		./utils/get_next_line.c \
 
 OBJSRCS = $(SRCS:.c=.o) 
 
