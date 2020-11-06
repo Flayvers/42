@@ -14,16 +14,14 @@
 
 int				main(int ac, char **av)
 {
-	void		*mlx;
     t_window 	*win;
-
-    printf("0");
-    //mlx = mlx_init();
+    
     printf("1");
-    //win->set_name = av[1];
+    win->set_name = av[1];
     printf("2");
-    //parser(win);
+    parser(win);
     printf("3");
+    win->mlx_ptr = mlx_init();
     win->mlx_win = mlx_new_window(mlx, win->heigh, win->width, "Cub3D");
     mlx_loop(mlx);
     return(0);
