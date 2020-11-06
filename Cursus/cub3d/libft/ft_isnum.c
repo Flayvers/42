@@ -1,4 +1,4 @@
-int	ft_num(char *str)
+int	ft_isnum(char *str)
 {
 	int		i;
 
