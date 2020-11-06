@@ -1,4 +1,4 @@
-MLX = -L./libft -lft -I/usr/local/include -L/usr/local/lib -lmlx -framework OpenGL -framework AppKit
+#MLX = -L./libft -lft -I/usr/local/include -L/usr/local/lib -lmlx -framework OpenGL -framework AppKit
 MLX = -lmlx -lm -framework OpenGL -framework AppKit
 #MLX = -I /usr/include -g -L /usr/lib -lX11 -lmlx -lXext -lm -fsanitize=address
 
@@ -16,7 +16,7 @@ $(NAME) : $(OBJSRCS)
 	@echo "\033[33m[Libft compilation...]"
 	@$(MAKE) bonus -C ./libft
 	@echo "\033[33m[Cub3D compilation...]"
-	@gcc $(OBJSRCS) -I./includes -I/usr/local/include -L/usr/local/lib -Wall -Wextra -Werror $(MLX) ./libft/libft.a -o $(NAME)
+	@gcc $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) ./libft/libft.a -o $(NAME)
 	@echo "\033[33m[Done !]"
 
 all : $(NAME)
