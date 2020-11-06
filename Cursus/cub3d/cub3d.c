@@ -18,7 +18,7 @@ int				main(int ac, char **av)
     t_window 	*win;
 
     printf("0");
-    mlx = mlx_init();
+    //mlx = mlx_init();
     printf("1");
     //win->set_name = av[1];
     printf("2");
