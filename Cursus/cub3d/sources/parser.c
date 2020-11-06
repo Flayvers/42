@@ -1,4 +1,4 @@
-#include "./includes/cub3d.h"
+#include "../includes/cub3d.h"
 
 int	parser (t_window *win)
 {
