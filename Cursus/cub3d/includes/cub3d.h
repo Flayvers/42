@@ -28,7 +28,7 @@
 # define SUCCES 1
 # define NEXT 2
 
-# include "../ft_printf/includes/ft_printf.h"
+# include "../libft/libft.h"
 //# include "utils.h"
 # include <mlx.h>
 # include <math.h>
