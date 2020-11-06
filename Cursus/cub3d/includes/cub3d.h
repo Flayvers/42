@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   cub3d.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rchallie <rchallie@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/22 11:52:11 by rchallie          #+#    #+#             */
-/*   Updated: 2020/01/16 17:11:42 by rchallie         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef CUB3D_H
 # define CUB3D_H
 
@@ -29,9 +17,28 @@
 # define NEXT 2
 
 # include "../libft/libft.h"
-//# include "utils.h"
+# include "utils.h"
 # include <mlx.h>
 # include <math.h>
 # include <time.h>
+
+typedef	struct			s_window
+{
+	void				*mlx_ptr;
+	void				*win_ptr;
+	void				*mlx_win;
+	int					heigh;
+	int					width;
+	int					color_floor;
+	int					color_ceiling;
+	char				*NO;
+	char				*SO;
+	char				*WE;
+	char				*EA;
+	char				*set_name;
+}						t_window;
+
+int		parser(t_window *win)
+int		check_line_R(char *line, t_window *win)
 
 #endif

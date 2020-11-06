@@ -14,6 +14,12 @@
 
 int				main(int ac, char **av)
 {
-	(void)ac;
-	(void)av;
-}
+	void		*mlx;
+    t_window 	*win;
+
+    mlx = mlx_init();
+    parser(win);
+    win->mlx_win = mlx_new_window(mlx, win-heigh, width, "Cub3D");
+    mlx_loop(mlx);
+    return(0);
+} 
