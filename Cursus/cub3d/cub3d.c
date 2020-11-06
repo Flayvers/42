@@ -22,7 +22,7 @@ int				main(int ac, char **av)
     parser(win);
     printf("3");
     win->mlx_ptr = mlx_init();
-    win->mlx_win = mlx_new_window(mlx->mlx_ptr, win->heigh, win->width, "Cub3D");
+    win->mlx_win = mlx_new_window(win->mlx_ptr, win->heigh, win->width, "Cub3D");
     mlx_loop(win->mlx_ptr);
     return(0);
 } 
