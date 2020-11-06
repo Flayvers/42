@@ -15,7 +15,7 @@
 int				main(int ac, char **av)
 {
     t_window 	*win;
-    
+
     printf("1");
     win->set_name = av[1];
     printf("2");
@@ -23,6 +23,6 @@ int				main(int ac, char **av)
     printf("3");
     win->mlx_ptr = mlx_init();
     win->mlx_win = mlx_new_window(mlx, win->heigh, win->width, "Cub3D");
-    mlx_loop(mlx);
+    mlx_loop(win->mlx_ptr);
     return(0);
 } 
