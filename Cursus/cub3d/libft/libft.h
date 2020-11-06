@@ -6,7 +6,7 @@
 /*   By: rrhrara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 11:22:08 by rrhrara           #+#    #+#             */
-/*   Updated: 2020/01/27 18:51:11 by rrhrara          ###   ########.fr       */
+/*   Updated: 2019/11/13 18:38:26 by rrhrara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-int					ft_len(unsigned long long int nb, int base);
-char				*ft_strnew(size_t size);
-char				*ft_itoa_base(uintmax_t num, uintmax_t base, char c);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *str, int fd);
@@ -38,13 +35,11 @@ int					ft_isdigit(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 char				*ft_strdup(char *src);
-char				*ft_strndup(char *src, size_t n);
 char				*ft_strjoin(char *s1, char *s2);
 unsigned int		ft_strlcat(char *dest, char *str, unsigned int size);
 unsigned int		ft_strlcpy(char *dest, char *src, unsigned int size);
 int					ft_tolower(char c);
 int					ft_strncmp(char *s1, char *s2, unsigned int n);
-int					ft_strcmp(char *s1, char *s2);
 char				*ft_strnstr(char *str, char *to_find, unsigned int n);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
@@ -72,7 +67,5 @@ void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)
 					(void *), void (*del)(void *));
-void				ft_putnbrumax_fd(uintmax_t n, int fd);
-void				ft_putnbrmax_fd(intmax_t n, int fd);
 
 #endif

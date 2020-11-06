@@ -22,20 +22,20 @@ OBJSRCS = $(SRCS:.c=.o)
 $(NAME) : $(OBJSRCS)
 	@echo "\033[33m[Remove last version...]"
 	@rm -rf Cub3D
-	@echo "\033[33m[Libft & ft_printf compilation...]"
-	@$(MAKE) bonus -C ./ft_printf
+	@echo "\033[33m[Libft compilation...]"
+	@$(MAKE) -C ./libft
 	@echo "\033[33m[Cub3D compilation...]"
-	@gcc $(OBJSRCSBONUS) $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) ./ft_printf/ft_printf.a -o $(NAME)
+	@gcc $(OBJSRCS) -I ./includes -I ./usr/include -Wall -Wextra -Werror $(MLX) ./libft.a -o $(NAME)
 	@echo "\033[33m[Done !]"
 
 all : $(NAME)
 
 clean :
 	rm -rf $(OBJSRCS)
-	$(MAKE) clean -C ./ft_printf
+	$(MAKE) clean -C ./libft
 
 fclean : clean
-	$(MAKE) fclean -C ./ft_printf
+	$(MAKE) fclean -C ./libft
 	rm -rf $(NAME)
 	rm -rf cub3d.bmp
 
