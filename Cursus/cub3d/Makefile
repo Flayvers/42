@@ -7,7 +7,7 @@ SRCS = 	cub3d.c \
 		utils/get_next_line.c \
 		sources/parser.c
 
-SRCS_LIB =	libft/ft _strndup.c \
+SRCS_LIB =	libft/ft_strndup.c \
 			libft/ft_isnum.c \
 			libft/ft_putchar_fd.c \
 			libft/ft_putstr_fd.c \
