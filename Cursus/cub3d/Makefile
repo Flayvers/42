@@ -16,7 +16,7 @@ $(NAME) : $(OBJSRCS)
 	@echo "\033[33m[Libft compilation...]"
 	@$(MAKE) bonus -C ./libft
 	@echo "\033[33m[Cub3D compilation...]"
-	@gcc $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) ./libft/libft.a -o $(NAME)
+	@gcc $(OBJSRCS) -I./includes -I./usr/include -Wall -Wextra -Werror $(MLX) -o ./libft/libft.a $(NAME)
 	@echo "\033[33m[Done !]"
 
 all : $(NAME)
