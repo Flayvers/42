@@ -1,6 +1,9 @@
 #ifndef UTILS_H
 # define UTILS_H
 
+# include <fcntl.h>
+# include <unistd.h>
+
 char		*newline(char *text, char **line, int ret);
 int			get_next_line(int fd, char **line);
 
