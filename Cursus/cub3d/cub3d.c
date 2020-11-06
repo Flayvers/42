@@ -20,7 +20,7 @@ int				main(int ac, char **av)
     printf("0");
     //mlx = mlx_init();
     printf("1");
-    win->set_name = av[1];
+    //win->set_name = av[1];
     printf("2");
     parser(win);
     printf("3");
