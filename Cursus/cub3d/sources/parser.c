@@ -23,15 +23,16 @@ int	parser (t_window *win)
 		}
 		free(line);
 	}
+	return(1);
 }
 
-int	check_line_R(char *line, t_window win)
+int	check_line_R(char *line, t_window *win)
 {
 	char	**split;
 
 	split = ft_split(line, ' ');
 
-	if (split[0][0] == 'R' && split[3] = '\n')
+	if (split[0][0] == 'R' && split[3] == '\n')
 	{
 		if (ft_isnum(split[1]))
 			win->heigh = ft_atoi(split[1]);
