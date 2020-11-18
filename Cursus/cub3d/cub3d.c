@@ -26,5 +26,5 @@ int				main(int ac, char **av)
 
     return(0);*/
     parser(win);
-    printf("heigh%d\nwidth%d", win->heigh, win-width);
+    printf("heigh%d\nwidth%d", win->heigh, win->width);
 } 
